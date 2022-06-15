@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+    background-color: whitesmoke;
+}
+
+.mainContainer {
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+}
+
+.roadLane {
+    background: url("../assets/gamebg.png") center no-repeat;
+    background-size: contain;
+    height: 47.5rem;
+    width: 30rem;
+    margin: 0rem 5rem 0rem;
+    margin: 0 auto;
+    background-repeat: repeat-y;
+    animation: move 2s linear infinite;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.currentScore {
+    width: 300px;
+    height: 100px;
+    background-color: wheat;
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.playBtn {
+    width: 300px;
+    height: 100px;
+    background-color: chocolate;
+    position: absolute;
+    top: 2%;
+    left: 40%;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: center;
+    padding-top: 14px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px,
+        rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+        rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.restart {
+    width: 400px;
+    height: 200px;
+    background-color: wheat;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    border-radius: 6px;
+    position: absolute;
+    left: 37%;
+    top: 23%;
+    text-align: center;
+    padding-top: 40px;
+    opacity: 0.7;
+}
+
+.hideMe {
+    display: none;
+}
+
+.car {
+    position: absolute;
+    background: url("../assets/car.png") no-repeat;
+    width: 98px;
+    height: 214px;
+    top: 530px;
+    left: 190px;
+}
+
+.otherCar {
+    position: absolute;
+    background: url("../assets/truck.png") no-repeat;
+    width: 89px;
+    height: 216px;
+    transform: rotate(180deg);
+}
